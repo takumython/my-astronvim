@@ -7,6 +7,13 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
+    -- windows: デフォルトのターミナルをpowershellに変更
+    -- shell = vim.fn.executable "pwsh" == 1 and "pwsh" or "powershell",
+    -- shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+    --  shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+    --  shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+    --  shellquote = "",
+    --  shellxquote = "",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
